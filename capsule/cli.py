@@ -53,7 +53,7 @@ commands=[
 def main():
 
     parser= argparse.ArgumentParser(
-        description="A simple CLI time capsule",
+        description="A simple CLI time capsule app",
     )
 
     subparsers= parser.add_subparsers(dest="command")

@@ -42,9 +42,9 @@ def add_capsule(args):
 
     (base/"notes").mkdir(exist_ok=True) # create notes directory if not present
     n=base/ "notes" / f"{capsule_id}.md"
-    n.write_text(f"# {new_data["name"]}\n\n### Written on {str(today)},\n\n{args.text}\n")
+    n.write_text(f"# {new_data['name']}\n\n### Written on {str(today)},\n\n{args.text}\n")
 
-    print(f"Capsule added: {new_data["name"]}")
+    print(f"Capsule added: {new_data['name']}")
     print(f"ID: {capsule_id}")
     
 
@@ -63,7 +63,7 @@ def list_capsule(args):
     print(f"You have {len(data)} capsules:\n")
     print("Capsule Name -> ID -> locked status\n")
     for note in data:
-        print(f"{note["name"]} -> {note["id"]} -> {"Locked" if note["locked"] else "Unlocked"}")
+        print(f"{note['name']} -> {note['id']} -> {'Locked' if note['locked'] else 'Unlocked'}")
 
 def remove_capsule(args):
 
@@ -117,7 +117,7 @@ def open_capsule(args):
                 note["locked"]=False
 
             if note["locked"]:
-                print(f"This note is locked. It will open on {note["after"]}")
+                print(f"This note is locked. It will open on {note['after']}")
                 return
 
             p.write_text(json.dumps(data, indent=4))

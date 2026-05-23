@@ -1,0 +1,7 @@
+[project]
+name = "capsule-cli"
+version = "0.1.0"
+description = "A simple CLI time capsule app"
+
+[project.scripts]
+capsule = "capsule.cli:main"
