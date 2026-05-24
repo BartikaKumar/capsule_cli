@@ -1,5 +1,11 @@
 # A simple CLI time capsule app
 
+#### All commands begin with
+
+```bash
+capsule
+```
+
 ## Features
 
 - Add capsules
