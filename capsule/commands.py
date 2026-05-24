@@ -63,7 +63,8 @@ def list_capsule(args):
     print(f"You have {len(data)} capsules:\n")
     print("Capsule Name -> ID -> locked status\n")
     for note in data:
-        print(f"{note['name']} -> {note['id']} -> {'Locked' if note['locked'] else 'Unlocked'}")
+        locked_stat= f"Locked (can be opened after {note['after']})" if note["locked"] else "Unlocked"
+        print(f"{note['name']} -> {note['id']} -> {locked_stat}")
 
 def remove_capsule(args):
 
