@@ -9,7 +9,7 @@
 - List all capsules
 - Remove capsules
 - Local filesystem storage
-- Simple CLI workflow_
+- Simple CLI workflow
 
 ## Tech Stack
 
@@ -49,7 +49,7 @@ Install the package:
 pip install -e .
 ```
 
-# Storage
+## Storage
 
 Capsules are stored locally in:
 
