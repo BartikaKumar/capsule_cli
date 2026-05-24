@@ -25,26 +25,36 @@
 
 Clone the repository:
 
-```git clone https://github.com/BartikaKumar/capsule_cli.git
-cd capsule-cli```
+```bash
+git clone https://github.com/BartikaKumar/capsule_cli.git
+cd capsule-cli
+```
 
 Create a virtual environment:
 
-```python3 -m venv .venv```
+```bash
+python3 -m venv .venv
+```
 
 ## Activate it:
 
 Linux/macOS
-```source .venv/bin/activate```
+```bash
+source .venv/bin/activate
+```
 
 Install the package:
 
-```pip install -e .```
+```bash
+pip install -e .
+```
 
 # Storage
 
 Capsules are stored locally in:
 
-```~/.local/share/capsule_cli```
+```text
+~/.local/share/capsule_cli
+```
 
 Markdown notes are stored separately from metadata.
