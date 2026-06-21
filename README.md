@@ -52,7 +52,7 @@ source .venv/bin/activate
 Install the package:
 
 ```bash
-pip install -e .
+pip install .
 ```
 
 ## Storage
